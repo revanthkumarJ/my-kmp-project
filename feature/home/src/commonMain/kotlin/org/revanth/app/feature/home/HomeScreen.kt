@@ -18,7 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
-import org.revanth.app.core.designsystem.component.MyKMPAppScaffold
+import org.revanth.app.core.designsystem.component.RevanthScaffold
 
 @Composable
 internal fun HomeScreen(modifier: Modifier = Modifier) {
@@ -29,7 +29,7 @@ internal fun HomeScreen(modifier: Modifier = Modifier) {
 
 @Composable
 internal fun HomeScreenContent(modifier: Modifier) {
-    MyKMPAppScaffold(modifier = modifier) {
+    RevanthScaffold(modifier = modifier) {
         Column(
             modifier = Modifier
                 .fillMaxSize()

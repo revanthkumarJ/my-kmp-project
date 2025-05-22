@@ -36,7 +36,7 @@ import androidx.compose.ui.graphics.Color
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MyKMPAppScaffold(
+fun RevanthScaffold(
     backPress: () -> Unit,
     modifier: Modifier = Modifier,
     topBarTitle: String? = null,
@@ -97,7 +97,7 @@ fun MyKMPAppScaffold(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MyKMPAppScaffold(
+fun RevanthScaffold(
     modifier: Modifier = Modifier,
     topBar: @Composable () -> Unit = {},
     bottomBar: @Composable () -> Unit = {},
