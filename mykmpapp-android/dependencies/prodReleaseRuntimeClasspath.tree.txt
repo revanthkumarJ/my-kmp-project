@@ -266,7 +266,7 @@
 |         +--- androidx.compose.ui:ui-text:1.7.6 (c)
 |         +--- androidx.compose.ui:ui-unit:1.7.6 (c)
 |         \--- androidx.compose.ui:ui-util:1.7.6 (c)
-+--- project :mifos-shared
++--- project :mykmpapp-shared
 |    +--- io.insert-koin:koin-bom:4.0.1-RC1
 |    |    +--- io.insert-koin:koin-core:4.0.1-RC1 (c)
 |    |    +--- io.insert-koin:koin-core-viewmodel:4.0.1-RC1 (c)

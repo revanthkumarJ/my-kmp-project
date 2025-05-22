@@ -10,7 +10,7 @@
 :feature:home
 :feature:profile
 :feature:settings
-:mifos-shared
+:mykmpapp-shared
 androidx.activity:activity-compose:1.9.3
 androidx.activity:activity-ktx:1.9.3
 androidx.activity:activity:1.9.3
