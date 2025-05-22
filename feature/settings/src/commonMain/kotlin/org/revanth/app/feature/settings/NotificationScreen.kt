@@ -18,7 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
-import org.revanth.app.core.designsystem.component.MyKMPAppScaffold
+import org.revanth.app.core.designsystem.component.RevanthScaffold
 
 @Composable
 internal fun NotificationScreen(
@@ -36,7 +36,7 @@ internal fun NotificationScreenContent(
     modifier: Modifier,
     onBackClick: () -> Unit,
 ) {
-    MyKMPAppScaffold(
+    RevanthScaffold(
         backPress = onBackClick,
         topBarTitle = "Notification",
         modifier = modifier,
