@@ -27,7 +27,6 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.ListItem
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedCard
-import androidx.compose.material3.SnackbarHostState
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -54,31 +53,28 @@ internal fun SettingsScreen(
     SettingsScreenContent(
         modifier = modifier.fillMaxSize(),
         onAction = {
-            when(it)
-            {
+            when (it) {
                 SettingsAction.AboutUs -> TODO()
                 is SettingsAction.ChangeDarkThemeConfig -> TODO()
                 SettingsAction.DismissThemeDialog -> TODO()
                 SettingsAction.Github -> TODO()
                 SettingsAction.NavigateBack -> onBackClick
                 SettingsAction.NavigateToEditProfile -> TODO()
-                SettingsAction.ShowThemeDialog -> {showDialog=true}
+                SettingsAction.ShowThemeDialog -> {
+                    showDialog = true
+                }
             }
-        }
+        },
     )
-    if(showDialog)
-    {
+    if (showDialog) {
         SettingsDialog(
             onDismiss = {
-                showDialog=false
+                showDialog = false
             },
-            onChange = {}
+            onChange = {},
         )
     }
 }
-
-
-
 
 @Composable
 internal fun SettingsScreenContent(
@@ -172,7 +168,6 @@ private fun SettingsScreenCard(
 fun SettingsScreenFooter(
     modifier: Modifier = Modifier,
 ) {
-
     Column(
         modifier = modifier.fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -215,4 +210,3 @@ private fun TextDivider(
         )
     }
 }
-

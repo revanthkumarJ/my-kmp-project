@@ -1,6 +1,14 @@
+/*
+ * Copyright 2025 Mifos Initiative
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ *
+ * See See https://github.com/openMF/kmp-project-template/blob/main/LICENSE
+ */
 package org.revanth.app.feature.settings.components
 
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -8,7 +16,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.selection.selectable
-import androidx.compose.foundation.selection.selectableGroup
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Surface
@@ -19,17 +26,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
-import org.jetbrains.compose.resources.stringResource
 import org.revanth.app.model.Theme
 
 @Composable
 fun SettingsDialog(
-    onDismiss:()->Unit,
-    onChange:(Theme)->Unit
-)
-{
+    onDismiss: () -> Unit,
+    onChange: (Theme) -> Unit,
+) {
     Dialog(
-        onDismissRequest = onDismiss
+        onDismissRequest = onDismiss,
     ) {
         Surface(
             shape = MaterialTheme.shapes.medium,
@@ -39,7 +44,7 @@ fun SettingsDialog(
             Column(
                 modifier = Modifier.padding(32.dp),
             ) {
-                Text("Select your Theme",style=MaterialTheme.typography.titleMedium)
+                Text("Select your Theme", style = MaterialTheme.typography.titleMedium)
                 SettingsDialogThemeChooserRow(
                     text = "Default",
                     selected = false,
@@ -59,7 +64,6 @@ fun SettingsDialog(
         }
     }
 }
-
 
 @Composable
 fun SettingsDialogThemeChooserRow(

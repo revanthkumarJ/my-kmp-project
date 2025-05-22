@@ -130,8 +130,8 @@ object AppIcons {
     val Scan = Icons.Outlined.QrCodeScanner
     val RadioButtonUnchecked = Icons.Default.RadioButtonUnchecked
     val RadioButtonChecked = Icons.Filled.RadioButtonChecked
-    val ArrowForward=Icons.Outlined.ArrowForward
-    val AboutUs=Icons.Outlined.Info
-    val Github=Icons.Outlined.Gite
-    val Sun=Icons.Outlined.WbSunny
+    val ArrowForward = Icons.Outlined.ArrowForward
+    val AboutUs = Icons.Outlined.Info
+    val Github = Icons.Outlined.Gite
+    val Sun = Icons.Outlined.WbSunny
 }

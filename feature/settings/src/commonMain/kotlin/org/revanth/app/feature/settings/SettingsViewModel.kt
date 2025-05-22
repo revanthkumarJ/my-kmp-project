@@ -1,9 +1,17 @@
+/*
+ * Copyright 2025 Mifos Initiative
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ *
+ * See See https://github.com/openMF/kmp-project-template/blob/main/LICENSE
+ */
 package org.revanth.app.feature.settings
 
 import androidx.compose.ui.graphics.vector.ImageVector
 import org.revanth.app.core.designsystem.icon.AppIcons
 import org.revanth.app.model.Theme
-
 
 enum class SettingsOption(
     val title: String,
